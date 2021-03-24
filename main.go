@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	log.Print("Hello how are you")
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hello hi, %q", html.EscapeString(r.URL.Path))
 	})
