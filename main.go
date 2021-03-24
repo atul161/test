@@ -17,10 +17,6 @@ func main() {
 		fmt.Fprintf(w, "Hi")
 	})
 
-
-	go func() {
-		Method()
-	}()
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
 
